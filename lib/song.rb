@@ -22,6 +22,14 @@ class Song
   
   def self.new_by_name(name)
     @name = name 
+  end   
+  
+  def self.created_by_name
+    @name = name 
+    @@all << name 
+  end   
+  
+  def self.find_by_name(name) 
     
   end   
 

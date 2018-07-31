@@ -27,7 +27,7 @@ class Song
     song 
   end   
   
-  def self.create_by_name
+  def self.create_by_name(song_name)
     @name = name 
     @@all << name 
   end   
@@ -36,4 +36,19 @@ class Song
     self.all.find {|song| song == name}
   end   
 
+  def self.find_or_create_by_name
+    
+  end 
+  
+  def self.alphabetical
+    
+  end 
+  
+  def .new_from_filename 
+    
+  end 
+  
+  def self.destroy_all
+    @@all.clear
+  end   
 end
